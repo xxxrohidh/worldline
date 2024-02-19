@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building.."
-                sh '''
+                sh '''#!/bin/bash
                 echo "doing Building.."
                 '''
             }
@@ -19,7 +19,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo "Testing.."
-                sh '''
+                sh '''#!/bin/bash
                 echo "doing Testing.."
                 '''
             }
