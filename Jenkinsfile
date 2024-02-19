@@ -4,6 +4,9 @@ pipeline {
             label 'my_pc'
             }
       }
+    triggers {
+        pollSCM '* * * * *'
+    }
      stages {
         stage('Build') {
             steps {
